@@ -1,13 +1,24 @@
 # dotnet-blog
 
-Markdown friendly blog engine inspired with Jekyll written in Microsoft .NET
+Markdown friendly blog engine inspired with Jekyll written in Microsoft .NET Core.
 
 ## Usage
 
+```
+$ cp _config.yml.sample _config.yml
+$ vi _config.yml
+$ git remote add [repository-host] dotnet-blog
+$ git push dotnet-blog master
+```
+
 ## Requirements
 
-## Installation
+Microsoft .NET Core 1.1
 
 ## License
 
+MIT
+
 ## Author
+
+Yasuhiro Matsumoto (a.k.a. mattn)
