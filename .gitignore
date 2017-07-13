@@ -1,0 +1,13 @@
+bin
+obj
+_site/assets
+_site/*.rss
+_site/*.html
+_posts/*.md
+_layouts/*.html
+*.user
+.vs
+.vscode/*.sql
+Properties
+goemon.yml
+_config.yml

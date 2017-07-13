@@ -1,0 +1,16 @@
+{
+    "version": "0.1.0",
+    "command": "C:\\Program Files\\dotnet\\dotnet.exe",
+    "isShellCommand": true,
+    "args": [],
+    "tasks": [
+        {
+            "taskName": "build",
+            "args": [
+                "${workspaceRoot}/dotnet-blog.csproj"
+            ],
+            "isBuildCommand": true,
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
