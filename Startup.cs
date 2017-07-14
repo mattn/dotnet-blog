@@ -41,7 +41,8 @@ namespace DotNetBlog
 		private string elem(HttpContext context, string key)
 		{
 			var s = context.GetRouteValue(key) as string;
-			if (string.IsNullOrEmpty(s)) {
+			if (string.IsNullOrEmpty(s))
+			{
 				return "*";
 			}
 			return s.ToString();
@@ -61,7 +62,8 @@ namespace DotNetBlog
 			return year + "/" + month + "/" + day;
 		}
 
-		private object makeEntry(string filename) {
+		private object makeEntry(string filename)
+		{
 			var content = File.ReadAllText(filename);
 			var title = Path.GetFileNameWithoutExtension(filename).Split(new Char[]{'-'}, 4)[3].Replace("_", " ");
 			DateTime updatedAt = DateTime.Parse(string.Join("/", Path.GetFileName(filename).Split(new Char[]{'-'}, 4).Take(3)));
@@ -204,7 +206,8 @@ namespace DotNetBlog
 			}
 		}
 
-		private bool doCmd(string cmdline) {
+		private bool doCmd(string cmdline)
+		{
 			ProcessStartInfo ps = new ProcessStartInfo();
 			if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
 			{
