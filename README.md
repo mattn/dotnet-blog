@@ -7,7 +7,7 @@ Markdown friendly blog engine inspired with Jekyll written in Microsoft .NET Cor
 ```
 $ cp _config.yml.sample _config.yml
 $ vi _config.yml
-$ git remote add [repository-host] dotnet-blog
+$ git remote add dotnet-blog [repository-host]
 $ git push dotnet-blog master
 ```
 
